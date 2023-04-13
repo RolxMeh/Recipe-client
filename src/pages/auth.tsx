@@ -73,7 +73,7 @@ const Auth = () => {
     }
   };
   return (
-    <div className="w-full h-screen px-4 bg-slate-900 grid grid-cols-2 justify-center items-center">
+    <div className="w-full h-screen px-4 bg-slate-900 flex flex-col md:grid grid-cols-2 justify-center items-center">
       <div className="flex flex-col items-center">
         <h1 className="text-2xl mb-3">Register</h1>
         <Formik
@@ -124,7 +124,7 @@ const Auth = () => {
           </Form>
         </Formik>
       </div>
-      <form method="POST" className="flex flex-col items-center">
+      <form method="POST" className="mt-12 flex flex-col items-center md:mt-0">
         <h1 className="text-2xl mb-3">Login</h1>
         <div className="w-80 h-auto p-3 flex flex-col place-self-center border border-slate-600">
           {loginStatus && (

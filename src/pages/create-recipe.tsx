@@ -39,7 +39,7 @@ const CreateRecipe = () => {
     event.preventDefault();
     try {
       await axios.post(
-        "https://recipe-server-fypv.onrender.comrecipes/createRecipe",
+        "https://recipe-server-fypv.onrender.com/recipes/createRecipe",
         recipe
       );
       alert("Recipe created");
@@ -53,7 +53,7 @@ const CreateRecipe = () => {
       <h1 className="text-4xl mb-4">Create Recipe</h1>
       <form
         method="POST"
-        className="w-96 h-auto my-2 px-3 pb-4 flex flex-col border border-slate-600"
+        className="w-4/5 h-auto my-2 px-3 pb-4 flex flex-col border border-slate-600 md:w-96"
       >
         <label htmlFor="name" className="w-auto my-2 inline-block">
           Name

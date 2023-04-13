@@ -16,7 +16,7 @@ const SavedRecipes = () => {
     try {
       const fetchSavedRecipes = async () => {
         const response = await axios.get(
-          `https://recipe-server-fypv.onrender.comrecipes/savedRecipes/${userId}`,
+          `https://recipe-server-fypv.onrender.com/recipes/savedRecipes/${userId}`,
           {
             headers: {
               authorization: cookies.access_token,
@@ -41,7 +41,7 @@ const SavedRecipes = () => {
           return (
             <div
               key={recipe._id}
-              className="w-96 h-auto my-2 px-3 border border-slate-600"
+              className="w-[94%] h-auto my-2 px-3 border border-slate-600 md:w-96"
             >
               <div className="my-2 flex justify-between">
                 <h2 className="text-xl ">{recipe.name}</h2>
