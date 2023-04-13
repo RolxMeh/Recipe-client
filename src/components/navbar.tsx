@@ -10,7 +10,7 @@ const Navbar = () => {
   const userId = userIdHook();
 
   return (
-    <div className="bg-slate-800 w-full h-20 text-sm flex items-center justify-center md:text-lg">
+    <div className="bg-slate-800 w-full h-20 text-base flex items-center justify-center md:text-lg">
       <Link href={"/"} className="mx-3  focus:text-blue-400">
         Home
       </Link>
