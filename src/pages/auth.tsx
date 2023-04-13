@@ -38,7 +38,7 @@ const Auth = () => {
     try {
       setNewUserDetails(data);
       await Axios.post(
-        "http://localhost:4000/auth/register",
+        "https://recipe-server-fypv.onrender.com/auth/register",
         newUserDetails
       ).then((res) => alert(res.data.message));
     } catch (error) {
@@ -57,7 +57,7 @@ const Auth = () => {
 
     try {
       await Axios.post(
-        "http://localhost:4000/auth/login",
+        "https://recipe-server-fypv.onrender.com/auth/login",
         userLoginDetails
       ).then((response) => {
         if (response.data.message) {

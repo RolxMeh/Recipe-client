@@ -15,13 +15,15 @@ const Homepage = () => {
   useEffect(() => {
     try {
       const fetchRecipe = async () => {
-        const response = await axios.get("http://localhost:4000/recipes");
+        const response = await axios.get(
+          "https://recipe-server-fypv.onrender.com/recipes"
+        );
         setRecipes(response.data);
       };
 
       const fetchSavedRecipes = async () => {
         const response = await axios.get(
-          `http://localhost:4000/recipes/savedRecipe/${userId}`,
+          `https://recipe-server-fypv.onrender.com/recipes/savedRecipe/${userId}`,
           {
             headers: {
               authorization: cookies.access_token,
@@ -41,7 +43,7 @@ const Homepage = () => {
   const handleSaveRecipes = async (recipeId) => {
     try {
       const response = await axios.put(
-        "http://localhost:4000/recipes/createRecipe",
+        "https://recipe-server-fypv.onrender.com/recipes/createRecipe",
         {
           userId,
           recipeId,

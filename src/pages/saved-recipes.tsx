@@ -16,7 +16,7 @@ const SavedRecipes = () => {
     try {
       const fetchSavedRecipes = async () => {
         const response = await axios.get(
-          `http://localhost:4000/recipes/savedRecipes/${userId}`,
+          `https://recipe-server-fypv.onrender.comrecipes/savedRecipes/${userId}`,
           {
             headers: {
               authorization: cookies.access_token,

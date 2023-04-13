@@ -38,7 +38,10 @@ const CreateRecipe = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:4000/recipes/createRecipe", recipe);
+      await axios.post(
+        "https://recipe-server-fypv.onrender.comrecipes/createRecipe",
+        recipe
+      );
       alert("Recipe created");
       router.push("/");
     } catch (error) {
