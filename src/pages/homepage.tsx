@@ -97,7 +97,7 @@ const Homepage = () => {
                   </li>
                 ))}
               </div>
-              <h4 className=" mt-2 text-base text-justify">
+              <h4 className="mt-3 text-base text-justify">
                 <h1 className="text-2xl text-center mb-2">Instruction</h1>
                 {recipe.instruction}
               </h4>
